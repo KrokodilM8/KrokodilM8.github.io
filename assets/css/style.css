@@ -514,21 +514,21 @@ main {
 }
 
 /*-----------------------------------*\
-  #ABOUT
+  #accueil
 \*-----------------------------------*/
 
-.about .article-title {
+.accueil .article-title {
   margin-bottom: 15px;
 }
 
-.about-text {
+.accueil-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
-.about-text p {
+.accueil-text p {
   margin-bottom: 15px;
 }
 
@@ -1488,14 +1488,14 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-   * #ABOUT
+   * #accueil
    */
 
-  .about .article-title {
+  .accueil .article-title {
     margin-bottom: 20px;
   }
 
-  .about-text {
+  .accueil-text {
     margin-bottom: 40px;
   }
 
@@ -1711,7 +1711,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-   * ABOUT
+   * accueil
    */
 
   /* testimonials modal */
@@ -1850,7 +1850,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-   * ABOUT
+   * accueil
    */
 
   /* service */
