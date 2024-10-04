@@ -165,7 +165,12 @@ html {
 }
 
 body {
-  background: var(--smoky-black);
+  /*background: var(--smoky-black);*/
+  background-image: url("/assets/images/dark-background.png");
+  background-size: cover; /* Pour que l'image couvre tout l'écran */
+  background-position: center; /* Pour centrer l'image */
+  background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+  background-attachment: fixed; /* Pour que l'image ne défile pas avec la page */
 }
 
 /*-----------------------------------*\
