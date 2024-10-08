@@ -169,7 +169,6 @@ body {
   background-image: url("/assets/images/dark-background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
