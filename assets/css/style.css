@@ -166,7 +166,7 @@ html {
 
 body {
   /*background: var(--smoky-black);*/
-  background-image: url("/assets/images/dark-background.png");
+  background-image: url("../images/dark-background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
