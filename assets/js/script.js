@@ -10,7 +10,6 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-// @ts-ignore
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
 });
@@ -28,24 +27,18 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
-  // @ts-ignore
   modalContainer.classList.toggle("active");
-  // @ts-ignore
   overlay.classList.toggle("active");
 };
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
   testimonialsItem[i].addEventListener("click", function () {
-    // @ts-ignore
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    // @ts-ignore
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    // @ts-ignore
     modalTitle.innerHTML = this.querySelector(
       "[data-testimonials-title]"
     ).innerHTML;
-    // @ts-ignore
     modalText.innerHTML = this.querySelector(
       "[data-testimonials-text]"
     ).innerHTML;
@@ -55,29 +48,20 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-// @ts-ignore
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// @ts-ignore
 overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
-const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-selecct-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-// @ts-ignore
-select.addEventListener("click", function () {
-  elementToggleFunc(this);
-});
 
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
-    // @ts-ignore
+
     selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
     filterFunc(selectedValue);
   });
 }
@@ -89,7 +73,6 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-      // @ts-ignore
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
     } else {
@@ -104,7 +87,6 @@ let lastClickedBtn = filterBtn[0];
 for (let i = 0; i < filterBtn.length; i++) {
   filterBtn[i].addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();
-    // @ts-ignore
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
@@ -123,34 +105,41 @@ const formBtn = document.querySelector("[data-form-btn]");
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
     // check form validation
-    // @ts-ignore
     if (form.checkValidity()) {
-      // @ts-ignore
       formBtn.removeAttribute("disabled");
     } else {
-      // @ts-ignore
       formBtn.setAttribute("disabled", "");
     }
   });
 }
 
-// page navigation variables
+// variables pour les liens de navigation et les pages
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-    for (let i = 0; i < pages.length; i++) {
-      // @ts-ignore
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+// ajouter un événement à tous les liens de navigation
+navigationLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function () {
+    const targetPage = this.getAttribute("data-nav-link");
+
+    // Activer la classe active pour les pages
+    pages.forEach((page) => {
+      if (page.getAttribute("data-page") === targetPage) {
+        page.classList.add("active");
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        page.classList.remove("active");
       }
-    }
+    });
+
+    // Activer la classe active pour les liens de navigation
+    navigationLinks.forEach((link) => {
+      if (link === this) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+
+    window.scrollTo(0, 0); // Remettre la page en haut
   });
-}
+});

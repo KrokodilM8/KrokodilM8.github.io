@@ -244,7 +244,6 @@ article.active {
 .h4,
 .h5 {
   color: var(--white-2);
-  text-transform: capitalize;
 }
 
 .h2 {
@@ -814,7 +813,7 @@ main {
 }
 
 /*-----------------------------------*\
-  #RESUME
+  #PARCOURS
 \*-----------------------------------*/
 
 .article-title {
@@ -1609,7 +1608,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-   * #RESUME
+   * #PARCOURS
    */
 
   .timeline-list {
@@ -2023,7 +2022,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   /**
-	 * RESUME
+	 * PARCOURS
 	 */
 
   .timeline-text {

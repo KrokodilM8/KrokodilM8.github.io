@@ -180,31 +180,25 @@
         - #NAVBAR
       -->
 
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>Accueil</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-        <!--
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-        -->
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link="accueil">Accueil</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="parcours">Parcours</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="compétences">Compétences</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
 
         <!--
         - #accueil
@@ -252,88 +246,6 @@
           - service
         -->
 
-          <section class="service">
-            <h3 class="h3 service-title">Mes domaines de compétence :</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Impression 3D</h4>
-
-                  <p class="service-item-text">
-                    Conception et impression de prototypes et pièces
-                    personnalisées.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">
-                    Bricolage Électronique (ESP32)
-                  </h4>
-
-                  <p class="service-item-text">
-                    Projets électroniques innovants avec microcontrôleur ESP32.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Bricolage Manuel</h4>
-
-                  <p class="service-item-text">
-                    Création et réparation d'objets avec des outils variés.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Gestion de Projet</h4>
-
-                  <p class="service-item-text">
-                    Planification et exécution de projets pour des résultats de
-                    qualité.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
 
           <!--
           - testimonials
@@ -595,7 +507,7 @@
         - #test
       -->
 
-        <article class="resume" data-page="resume">
+        <article class="resume" data-page="parcours">
           <header>
             <h2 class="h2 article-title">Parcours</h2>
           </header>
@@ -743,6 +655,7 @@
               </li>
             </ol>
           </section>
+                  <!--
           <section class="skill">
             <h3 class="h3 skills-title">Mes compétences</h3>
 
@@ -792,291 +705,212 @@
               </li>
             </ul>
           </section>
+                -->
         </article>
+
+
 
         <!--
         - #PORTFOLIO
       -->
 
-        <article class="portfolio" data-page="portfolio">
+        <article class="competences" data-page="compétences">
           <header>
-            <h2 class="h2 article-title">Portfolio en travaux</h2>
+            <h2 class="h2 article-title">Compétences</h2>
           </header>
 
-          <section class="projects">
-            <!--
+          <section class="service">
+            <h3 class="h3 service-title">Hardskills</h3>
 
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-      -->
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/3DPrintYellow.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
                 </div>
 
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Conception et Impression 3D
+                  </h4>
+
+                  <p class="service-item-text">
+                    Conception et impression de prototypes et pièces
+                    personnalisées.
+                  </p>
                 </div>
-              </button>
-              <!--
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
-              -->
-            </div>
-            <!--
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Programmation et développement
+                  </h4>
 
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <p class="service-item-text">
+                    Développement web avec HTML, CSS, JavaScript et maîtrise de l'ESP32 pour des projets IoT.
+                  </p>
+                </div>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/robotYellow.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Robotique et Automatisation
+                  </h4>
 
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
+                  <p class="service-item-text">
+                    Programmation et automatisation de systèmes robotiques.
+                  </p>
+                </div>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/managYellow.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Gestion de Projet
+                  </h4>
 
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <p class="service-item-text">
+                    Planification et exécution de projets pour des résultats de
+                    qualité.
+                  </p>
+                </div>
               </li>
             </ul>
-                          -->
           </section>
+          <section class="service"></section>
+            <h3 class="h3 service-title">Softskills</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/LeadYellow.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Leadership et Gestion d'équipe
+                  </h4>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Communication
+                  </h4>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/selflearnyellow.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Autonomie et Initiative
+                  </h4>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/infniYellow.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Curiosité et Apprentissage continu
+                  </h4>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ouiYelllow.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Adaptabilité
+                  </h4>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ideaYellow.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Résolution de problèmes
+                  </h4>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
         </article>
 
         <!--
