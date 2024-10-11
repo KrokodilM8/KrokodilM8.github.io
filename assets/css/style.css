@@ -561,8 +561,25 @@ main {
   box-shadow: var(--shadow-2);
   z-index: 1;
 }
+.service-item-test {
+  position: relative;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  border: 1px solid #515151;
+}
 
 .service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.service-item-test::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1505,6 +1522,14 @@ textarea.form-input::-webkit-resizer {
   /* service */
 
   .service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+
+  .service-item-test {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
