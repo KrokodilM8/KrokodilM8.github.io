@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XMK1QRDNH1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XMK1QRDNH1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Clément BRUS - Etudiant Ingénieur en Informatique, Numérique et Réseaux
+    </title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./css/cssGalerie.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <bodyBLOG>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" id="nav-accueil-button">
+                Menu
+              </button>
+              <!-- Menu déroulant -->
+              <ul class="dropdown-menu" id="accueil-dropdown">
+                <li>
+                  <a href="./testBLOG.html" class="dropdown-link">Accueil</a>
+                </li>
+                <li>
+                  <a href="galerie.html" class="dropdown-link">Galerie</a>
+                </li>
+                <li>
+                  <a href="../../index.html" class="dropdown-link">Portfolio</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="Menu">
+          <header>
+            <h2 class="h2 article-title">Galerie</h2>
+          </header>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <ul class="project-list">
+            <li class="project-item active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./images/Finlande/blog1.jpg" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Rencontre avec les mascottes de Snowman World au village du
+                  Père Noël à Rovaniemi.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog2.jpg"
+                    alt="orizon"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Le célèbre pont Jätkänkynttilä illuminé sous la neige à
+                  Rovaniemi.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog3.jpg"
+                    alt="fundo"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Vue depuis le pont de Rovaniemi au petit matin.
+                </p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="applications"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog4.jpg"
+                    alt="brawlhalla"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Lumière matinale sur la rivière gelée de Rovaniemi.
+                </p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="web design"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog5.jpg"
+                    alt="dsm."
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">Gare de Rovaniemi.</p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="web design"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog6.jpg"
+                    alt="metaspark"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Vue depuis l'avion lors du vol entre la Finlande et la France.
+                </p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="web development"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img
+                    src="./images/Finlande/blog7.jpg"
+                    alt="summary"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Retrouvailles avec ma famille lors de leur visite pendant mon
+                  séjour.
+                </p>
+              </a>
+            </li>
+
+            <li
+              class="project-item active"
+              data-filter-item
+              data-category="applications"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <video controls>
+                    <source
+                      src="./images/Finlande/blog8.mp4"
+                      type="video/mp4"
+                    />
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                  </video>
+                </figure>
+
+                <h3 class="project-title">_</h3>
+
+                <p class="project-category">
+                  Prototype avec deux servo-moteur pour tester un mécanisme
+                  simple.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <!-- Lightbox HTML structure -->
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <video class="lightbox-content" id="lightbox-video" controls></video>
+    </div>
+
+    <script src="./js/jsGalerie.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </bodyBLOG>
+</html>

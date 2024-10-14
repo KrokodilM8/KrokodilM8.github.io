@@ -2054,3 +2054,31 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 }
+
+/* Styles de base pour la navigation */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; /* Place le menu juste en dessous du bouton */
+  left: 0; /* Aligne le menu avec le bouton */
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757;
+}

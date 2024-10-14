@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XMK1QRDNH1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XMK1QRDNH1");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Clément BRUS - Etudiant Ingénieur en Informatique, Numérique et Réseaux
+    </title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./css/styleBlogFinlande.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <bodyBLOG>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" id="nav-accueil-button">
+                Menu
+              </button>
+              <!-- Menu déroulant -->
+              <ul class="dropdown-menu" id="accueil-dropdown">
+                <li>
+                  <a href="./testBLOG.html" class="dropdown-link">Accueil</a>
+                </li>
+                <li>
+                  <a href="galerie.html" class="dropdown-link">Galerie</a>
+                </li>
+                <li>
+                  <a href="../../index.html" class="dropdown-link">Portfolio</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="Menu">
+          <header>
+            <h2 class="h2 article-title">Voyage Erasmus en FINLANDE</h2>
+          </header>
+
+          <section class="accueil-text">
+            <h3 class="h3 clients-title">
+              Bienvenue sur mon blog dédié à mon sejour Erasmus en Finlande !
+            </h3>
+            <p>
+              De janvier à mai 2024, j'ai eu l'opportunité incroyable de partir
+              en Finlande dans le cadre du programme Erasmus pour approfondir
+              mes études. Ce blog est une façon de partager mon expérience, mes
+              découvertes et mes aventures au cours de ces quelques mois.
+            </p>
+
+            <p>
+              Pendant mon séjour, j'ai suivi des cours variés, alliant
+              l'informatique, la gestion et même la culture locale. Parmi eux,
+              des sujets tels que la programmation en C++ et orientée objet, la
+              gestion de projet logiciel, l'introduction à l'intelligence
+              artificielle, ainsi qu'un cours fascinant sur la langue et la
+              culture finlandaise. Ces cours m'ont permis d'élargir mes
+              compétences tout en explorant un nouveau pays.
+            </p>
+
+            <p>
+              Dans les prochaines pages, vous trouverez des récits détaillés de
+              mon quotidien, des photos des paysages nordiques et quelques
+              conseils si vous envisagez de faire un Erasmus en Finlande.
+              J'espère que cela vous inspirera à voyager et à découvrir de
+              nouveaux horizons !
+            </p>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./images/avatar-1.png"
+                    alt="Employeur fictif 1"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Employeur fictif 1
+                </h4>
+
+                <time datetime="2024-07-24">24 Juillet, 2024</time>
+
+                <div data-modal-text>
+                  <p>
+                    Clément a démontré une aptitude exceptionnelle à gérer des
+                    projets complexes. Son organisation, sa rigueur et sa
+                    capacité à anticiper les problèmes ont été déterminantes
+                    pour le succès de nos initiatives. Il a su coordonner les
+                    équipes avec efficacité et a toujours respecté les délais
+                    imposés.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        --></article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./js/scriptBlogFin.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </bodyBLOG>
+</html>
