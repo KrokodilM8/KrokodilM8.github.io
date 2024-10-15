@@ -2141,3 +2141,120 @@ textarea.form-input::-webkit-resizer {
   font-weight: bold;
   cursor: pointer;
 }
+
+.image-content_left img {
+  float: left; /* Positionne l'image à gauche */
+  margin: 0 15px 10px 0; /* Ajoute un espace entre le texte et l'image */
+  max-width: 295px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image, si tu veux */
+}
+.image-content_leftv2 img {
+  float: left; /* Positionne l'image à gauche */
+  margin: 0 15px 10px 0; /* Ajoute un espace entre le texte et l'image */
+  max-width: 350px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image, si tu veux */
+}
+.image-content_right img {
+  float: right; /* Positionne l'image à gauche */
+  margin: 0 20px 10px 20px; /* Ajoute un espace entre le texte et l'image */
+  max-width: 165px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image, si tu veux */
+}
+.image-content_rightv2 img {
+  float: right; /* Positionne l'image à gauche */
+  margin: 0 20px 10px 20px; /* Ajoute un espace entre le texte et l'image */
+  max-width: 280px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image, si tu veux */
+}
+.image-content_rightv3 img {
+  float: right; /* Positionne l'image à gauche */
+  margin: 0 20px 10px 20px; /* Ajoute un espace entre le texte et l'image */
+  max-width: 400px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis à l'image, si tu veux */
+}
+.video-content video {
+  float: right; /* Positionne la vidéo à droite */
+  margin: 0 20px 10px 20px; /* Ajoute un espace entre le texte et la vidéo */
+  max-width: 280px; /* Ajuste la taille de la vidéo pour qu'elle ne prenne pas trop de place */
+  height: auto; /* Conserve les proportions de la vidéo */
+  border-radius: 10px; /* Ajoute des coins arrondis à la vidéo */
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #575757;
+  color: var(--orange-yellow-crayola);
+}
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+/* Responsive : affichage du menu hamburger sur petit écran */
+@media (max-width: 768px) {
+  .sidebar,
+  article {
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    padding: 15px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  /* Styles par défaut */
+  .navbar {
+    position: relative;
+  }
+
+  /* Cache le menu déroulant par défaut */
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  /* Quand le menu est actif (affiché) */
+  .dropdown-menu.active {
+    display: flex;
+  }
+
+  /* Ajuste les liens dans le menu déroulant */
+  .dropdown-menu li a {
+    padding: 10px;
+    border-bottom: 1px solid #575757;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #444;
+  }
+}

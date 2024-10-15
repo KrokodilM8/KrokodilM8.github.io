@@ -2000,3 +2000,50 @@ textarea.form-input::-webkit-resizer {
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .sidebar,
+  article {
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    padding: 15px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  /* Styles par défaut */
+  .navbar {
+    position: relative;
+  }
+
+  /* Cache le menu déroulant par défaut */
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  /* Quand le menu est actif (affiché) */
+  .dropdown-menu.active {
+    display: flex;
+  }
+
+  /* Ajuste les liens dans le menu déroulant */
+  .dropdown-menu li a {
+    padding: 10px;
+    border-bottom: 1px solid #575757;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #444;
+  }
+}
