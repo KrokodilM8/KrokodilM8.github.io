@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clément BRUS - Innov'Lab</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XMK1QRDNH1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XMK1QRDNH1");
+    </script>
+
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styleBlogFinlande.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <bodyBLOG>
+    <main>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" id="nav-accueil-button">
+                Menu
+              </button>
+              <ul class="dropdown-menu" id="accueil-dropdown">
+                <li>
+                  <a href="./testBLOG.html" class="dropdown-link">Accueil</a>
+                </li>
+                <li>
+                  <a href="galerie.html" class="dropdown-link">Galerie</a>
+                </li>
+                <li>
+                  <a href="../../index.html" class="dropdown-link">Portfolio</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="Menu">
+          <header>
+            <h2 class="h2 article-title">Innov'Lab - Innover ensemble</h2>
+          </header>
+
+          <section class="accueil-text">
+            <h3 class="h3 clients-title">
+              Mon rôle à Innov'Lab - Récapitulatif des deux dernières années
+            </h3>
+            <p>
+              Mon engagement dans l'association Innov'Lab a commencé en 2022.
+              J'ai d'abord exercé le rôle de vice-président avant de prendre la
+              présidence l'année suivante. Voici un récapitulatif de mes
+              responsabilités et des projets menés au sein de l'association.
+            </p>
+          </section>
+
+          <section class="accueil-text">
+            <h3 class="h3 clients-title">
+              Année 1 — Vice-présidence (2022-2023)
+            </h3>
+            <p>
+              Cette première année d'engagement en tant que vice-président
+              d'Innov'Lab a été une étape décisive. Ce fut une année de
+              structuration, d’expansion des activités et de relance de projets
+              techniques. Voici un véritable carnet de bord de cette période,
+              pensé comme un récit immersif.
+            </p>
+
+            <h4 class="h4">🔧 Le laboratoire au quotidien</h4>
+            <p>
+              Quand j’ai rejoint Innov’Lab, l’espace était fonctionnel, mais peu
+              organisé. J’ai participé à une réorganisation complète : rangement
+              du matériel, étiquetage, tri des composants électroniques, mise en
+              place d’un tableau d’emprunt. Il était essentiel que chacun puisse
+              s’y retrouver facilement, surtout les nouveaux membres. Nous avons
+              nettoyé les imprimantes 3D, révisé la Prusa MK3 et mis en
+              fonctionnement la CNC. J’ai également introduit l’idée d’un
+              inventaire partagé sur Google Sheets.
+            </p>
+
+            <h4 class="h4">🛠 Les services pour les étudiants</h4>
+            <p>
+              L’association ne devait pas se contenter de projets internes :
+              elle devait être utile à l’ensemble des étudiants. Nous avons donc
+              proposé :
+            </p>
+            <ul>
+              <li>
+                🔹 <strong>Des impressions 3D à prix coûtant</strong> : via
+                formulaire ou passage au local.
+              </li>
+              <li>
+                🔹 <strong>Des initiations à l’impression 3D</strong> : que j’ai
+                créées et animées, ouvertes à tous les niveaux.
+              </li>
+              <li>
+                🔹 <strong>Un accompagnement technique</strong> : un étudiant
+                qui voulait intégrer un Arduino dans son projet ? Nous étions là
+                pour l'aider, avec matériel et conseils.
+              </li>
+            </ul>
+
+            <h4 class="h4">🚀 Lancement ou relance des projets majeurs</h4>
+
+            <h5 class="h5">🛸 Projet Drone</h5>
+            <p>
+              Le drone était un défi collectif. Nous avions quelques pièces,
+              mais tout était à faire. J’ai supervisé l’achat des moteurs
+              brushless, la soudure des ESC, l’intégration du contrôleur de vol
+              et sa configuration via Betaflight. Plusieurs membres ont pu
+              s’initier à la soudure et à la calibration. Lors du premier vol
+              test, nous avons filmé l’instant avec fierté. Le drone a volé de
+              manière stable après plusieurs ajustements sur les PID.
+            </p>
+            <p>
+              🔍 <strong>Compétences développées :</strong> soudure
+              électronique, configuration de contrôleurs de vol, travail
+              d’équipe technique, documentation de projet.
+            </p>
+
+            <h5 class="h5">🕹 Bornes d’arcade</h5>
+            <p>
+              Récupérées dans un état lamentable, les deux bornes ont été
+              démontées avec précaution. Nous avons nettoyé, réinstallé les
+              composants, intégré un Raspberry Pi avec Recalbox, refait le
+              câblage et imprimé en 3D des pièces manquantes (dont la fameuse
+              boule de joystick). J’ai personnellement guidé les nouveaux dans
+              l’installation logicielle, les tests de compatibilité des ROMs, et
+              l’optimisation de l’interface. Une borne a même été utilisée
+              pendant un événement étudiant.
+            </p>
+            <p>
+              🔍 <strong>Compétences développées :</strong> rétro-gaming,
+              gestion de projet matériel, câblage, interfaces homme-machine,
+              transmission de savoir.
+            </p>
+
+            <h5 class="h5">🔄 Recycleur de bouteilles</h5>
+            <p>
+              Ce projet naît d’une idée : valoriser le recyclage sur le campus.
+              L’idée était d’insérer une bouteille, que la machine détecte
+              (capteur à ultrasons testé), et d'afficher un message ou
+              déclencher une LED. J’ai modélisé le premier prototype de boîtier
+              sur Fusion 360. Nous avons rencontré des défis côté reconnaissance
+              et avons documenté les avancées pour une reprise ultérieure. Le
+              projet a été mis en pause, mais reste un jalon symbolique de notre
+              créativité.
+            </p>
+            <p>
+              🔍 <strong>Compétences développées :</strong> prototypage,
+              modélisation 3D, réflexion autour de l’éco-conception, travail
+              itératif.
+            </p>
+
+            <h5 class="h5">💧 Arroseur automatique</h5>
+            <p>
+              Pensé à l’origine pour des plantes dans le local, ce projet nous a
+              permis de travailler sur des capteurs d’humidité. Les pots ont été
+              imprimés par nos soins, puis percés pour intégrer les tuyaux
+              d’irrigation. Le système Arduino déclenchait une pompe selon les
+              valeurs d’humidité. J’ai écrit une première version du code. Le
+              système a fonctionné sur une période de tests, mais restait à
+              stabiliser pour une installation permanente.
+            </p>
+            <p>
+              🔍 <strong>Compétences développées :</strong> programmation
+              Arduino, gestion de capteurs, automatisation, adaptation à un
+              environnement réel.
+            </p>
+
+            <h5 class="h5">🎨 Refonte graphique de l'association</h5>
+            <p>
+              Nous voulions une nouvelle identité visuelle. J’ai encadré le
+              travail d’un membre graphiste qui a proposé une dizaine de
+              versions. Nous avons retenu une identité minimaliste, avec un logo
+              jaune orangé rappelant l’innovation et la création. Ce logo a été
+              utilisé pour des autocollants, des supports de communication, et
+              même une impression en 3D testée sur badge !
+            </p>
+            <p>
+              🔍 <strong>Compétences développées :</strong> pilotage créatif,
+              feedback design, communication visuelle, gestion de livrables
+              graphiques.
+            </p>
+          </section>
+
+          <section class="accueil-text">
+            <h3 class="h3 clients-title">Année 2 : Présidence (2023-2024)</h3>
+            <p>
+              Cette année, j'ai assuré la présidence tout en étant en Erasmus en
+              Finlande. J'ai supervisé la relance de projets en pause et
+              l'organisation d'événements internes.
+            </p>
+            <p><strong>Projets :</strong></p>
+            <ul>
+              <li>Refonte extérieure des bornes : en cours</li>
+              <li>Recycleur de bouteilles : mis en pause</li>
+              <li>
+                Sweats floqués Innov'Lab : en cours, quelques soucis logistiques
+              </li>
+              <li>Buzzers connectés : abandonné</li>
+              <li>Bras articulé : repris par d'autres étudiants</li>
+              <li>Voiture télécommandée : projet non poursuivi</li>
+              <li>Cours d'impression 3D : donnés à nouveau cette année</li>
+            </ul>
+            <p><strong>Événements :</strong> soirée raclette, Secret Santa</p>
+            <p>
+              <strong>Gestion :</strong> suivi des fonds anciens et subventions
+              avec Matthéo (trésorier)
+            </p>
+          </section>
+
+          <section class="accueil-text">
+            <h3 class="h3 clients-title">
+              Projet majeur : Création d'un FabLab
+            </h3>
+            <p>
+              Un des projets majeurs que j'ai initié cette année est la création
+              d'un FabLab à l'ESAIP, géré par Innov'Lab, et ouvert à tous les
+              étudiants. L'objectif est de démocratiser l'accès aux outils de
+              prototypage, tout en favorisant l'autonomie.
+            </p>
+            <p>
+              Le projet est soutenu par le CERAD, en attente d'officialisation
+              après réunion avec les responsables de l'école. Il devrait se
+              concrétiser courant 2025 et sera transmis au futur président pour
+              assurer sa continuité.
+            </p>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script src="./js/scriptBlogFin.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </bodyBLOG>
+</html>
